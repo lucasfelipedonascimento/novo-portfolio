@@ -14,6 +14,8 @@ import {
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+import Image from "next/image";
+import PowerAutomateLogo from "../../../public/PALogo.png";
 
 export function Technology() {
   return (
@@ -41,6 +43,12 @@ export function Technology() {
         <VscVscode size={40} color="blue" />
         <SiJest size={40} color="purple" />
         <SiVitest size={40} color="green" />
+        <Image
+          src={PowerAutomateLogo}
+          width={50}
+          height={40}
+          alt="Logo Power Automate"
+        />
       </div>
     </div>
   );

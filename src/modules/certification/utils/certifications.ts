@@ -42,4 +42,11 @@ export const certifications: Certification[] = [
       "Certificação do curso Docker na Prática da Full Cycle, que abrangeu conceitos fundamentais de Docker, containers e entre outros.",
     url: "/documents/lucas-felipe-docker-na-pratica.pdf",
   },
+  {
+    id: 7,
+    title: "Curso de Power Automate",
+    description:
+      "Certificação do curso Power Automate da Udemy, que abrangeu conceitos fundamentais e práticas de automatizações e integrações.",
+    url: "/documents/curso-power-automate.pdf",
+  },
 ];

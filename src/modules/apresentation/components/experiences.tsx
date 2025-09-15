@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { experiences } from "../utils/experiences";
 
 export function Experiences() {
   return (
@@ -8,47 +9,21 @@ export function Experiences() {
       </h1>
 
       <ul className="flex flex-col xl:list-disc gap-2 text-sm text-white text-center xl:text-start">
-        <li>
-          Operador de Academia na{" "}
-          <Link
-            href="https://www.instagram.com/a3_academia/"
-            target="_blank"
-            className="hover:underline hover:text-green-600 font-bold"
-          >
-            A3 Academia
-          </Link>{" "}
-          (2020 - 2020)
-        </li>
-
-        <li>
-          Serviço Autônomo de Manutenção de PCs/Notebooks pela{" "}
-          <Link
-            href="https://www.instagram.com/padilha_tech/"
-            target="_blank"
-            className="hover:underline hover:text-green-600 font-bold"
-          >
-            Padilha Tech
-          </Link>{" "}
-          (2020 - Presente)
-        </li>
-
-        <li>
-          Desenvolvedor Front-end no{" "}
-          <Link
-            href="https://www.tempario.com.br/"
-            target="_blank"
-            className="hover:underline hover:text-green-600 font-bold"
-          >
-            Tempario
-          </Link>{" "}
-          (2022 - 2025)
-        </li>
-
-        <li>
-          Desenvolvimento de projetos{" "}
-          <span className="font-bold">pessoais</span> carregados abaixo (2020 -
-          Presente)
-        </li>
+        {experiences.map((experience) => {
+          return (
+            <li key={experience.id}>
+              {experience.role} na{" "}
+              <Link
+                href={experience.href}
+                target="_blank"
+                className="hover:underline hover:text-green-600 font-bold"
+              >
+                {experience.company}
+              </Link>{" "}
+              ({experience.period})
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
