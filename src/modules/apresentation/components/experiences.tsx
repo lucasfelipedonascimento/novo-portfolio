@@ -45,6 +45,18 @@ export function Experiences() {
         </li>
 
         <li>
+          Programador Jr. na{" "}
+          <Link
+            href="https://www.leiloespb.com.br/"
+            target="_blank"
+            className="hover:underline hover:text-green-600 font-bold"
+          >
+            Leilões PB
+          </Link>{" "}
+          (2025 - Presente)
+        </li>
+
+        <li>
           Desenvolvimento de projetos{" "}
           <span className="font-bold">pessoais</span> carregados abaixo (2020 -
           Presente)

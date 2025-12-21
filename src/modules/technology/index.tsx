@@ -12,8 +12,12 @@ import {
   SiJest,
   SiVitest,
 } from "react-icons/si";
+import SharePoint from "../../../public/Microsoft_Office_SharePoint_(2019–2025).png";
+import PowerAutomate from "../../../public/Microsoft_Power_Automate.png";
+import PowerApp from "../../../public/Powerapps-logo.png";
 import { TbSql } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+import Image from "next/image";
 
 export function Technology() {
   return (
@@ -41,6 +45,9 @@ export function Technology() {
         <VscVscode size={40} color="blue" />
         <SiJest size={40} color="purple" />
         <SiVitest size={40} color="green" />
+        <Image src={SharePoint} alt="SharePoint" width={40} height={40} />
+        <Image src={PowerAutomate} alt="PowerAutomate" width={40} height={40} />
+        <Image src={PowerApp} alt="PowerApp" width={40} height={40} />
       </div>
     </div>
   );
